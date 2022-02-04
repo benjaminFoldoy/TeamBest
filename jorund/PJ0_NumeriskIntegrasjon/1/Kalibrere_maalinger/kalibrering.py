@@ -12,37 +12,27 @@ with open('maalinger.txt', 'r', encoding='utf-8') as filen:
     for entry in maalinger:
         if entry >= 78.0:
             entry = 50.0
-            kalibrerte_maalinger.append(entry)
         elif entry >= 65:
             entry = 40.0
-            kalibrerte_maalinger.append(entry)
         elif entry >= 53.5:
             entry = 30.0
-            kalibrerte_maalinger.append(entry)
         elif entry >= 43.5:
             entry = 20.0
-            kalibrerte_maalinger.append(entry)
         elif entry >= 35.0:
             entry = 10.0
-            kalibrerte_maalinger.append(entry)
         elif entry >= 26.0:
             entry = 0.0
-            kalibrerte_maalinger.append(entry)
         elif entry >= 21.0:
             entry = -10.0
-            kalibrerte_maalinger.append(entry)
         elif entry >= 19.0:
             entry = -20.0
-            kalibrerte_maalinger.append(entry)
         elif entry >= 17.5:
             entry = -30.0
-            kalibrerte_maalinger.append(entry)
         elif entry >= 16.5:
             entry = -40.0
-            kalibrerte_maalinger.append(entry)
         else:
             entry = -50.0
-            kalibrerte_maalinger.append(entry)
+        kalibrerte_maalinger.append(entry)
     
     with open('kalibrerte_maalinger.txt', 'w', encoding='utf-8') as ny_fil:
         for i in range(len(tidspunkt)):
